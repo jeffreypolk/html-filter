@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="ps-filter.css" />
+
+    <style type="text/css">
+        body {
+            padding:10px;
+        }
+    </style>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="highlight.min.js"></script>
+    <script type="text/javascript" src="ps-filter.js"></script>
+    <title>ps-filter examples - Bootstrap table</title>
+</head>
+<body>
+    <h4>Filter Bootstrap Table:</h4>
+        
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-addon"><span class="fa fa-search">&nbsp;</span></div>
+            <input type="text" class="form-control ps-filter" placeholder="Filter rows" data-filterclass="filter-row" />
+        </div>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="filter-row">
+                <td>Lorem ipsum dolor</td>
+                <td>sit amet, consectetur</td>
+                <td>adipiscing elit, sed</td>
+            </tr>
+            <tr class="filter-row">
+                <td>incididunt ut labore</td>
+                <td>et dolore magna</td>
+                <td>aliqua. Ut enim</td>
+            </tr>
+            <tr class="filter-row">
+                <td>ad minim veniam</td>
+                <td>quis nostrud exercitation</td>
+                <td>ullamco laboris nisi</td>
+            </tr>
+            <tr class="filter-row">
+                <td>ut aliquip ex</td>
+                <td>ea commodo consequat</td>
+                <td>Duis aute irure</td>
+            </tr>
+            <tr class="filter-row">
+                <td>dolor in reprehenderit </td>
+                <td>in voluptate velit</td>
+                <td>esse cillum dolore</td>
+            </tr>
+            <tr class="filter-row">
+                <td>eu fugiat nulla</td>
+                <td>pariatur. Excepteur sint</td>
+                <td>occaecat cupidatat non</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

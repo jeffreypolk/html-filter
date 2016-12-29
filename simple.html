@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="ps-filter.css" />
+    
+    <style type="text/css">
+        body {
+            font-family: Arial;
+        }
+    </style>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="highlight.min.js"></script>
+    <script type="text/javascript" src="ps-filter.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#txtFilterList').psFilter({
+                filterClass: 'filter-list',
+                hightlight: true
+            });
+        });
+
+    </script>
+    <title>ps-filter examples - simple</title>
+</head>
+<body>
+    <!-- Filter divs -->
+    <div>
+        <h4>Filter divs:</h4>
+        
+        <div>Filter: <input type="text" class="ps-filter" /></div>
+        <br />
+        <div class="ps-filter-item">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+
+        <div class="ps-filter-item">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+
+        <div class="ps-filter-item">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+
+        <div class="ps-filter-item">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+    </div>
+
+    <br/>
+    <hr />
+
+    <!-- Filter divs with custom css class and optional highlighting -->
+    <div>
+        <h4>Filter divs with custom class and optional highlighting:</h4>
+
+        <div>Filter: <input type="text" class="ps-filter" data-filterclass="custom-class" data-filterhighlight="true" /></div>
+        <br />
+        <div class="custom-class">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+
+        <div class="custom-class">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+
+        <div class="custom-class">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+
+        <div class="custom-class">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+    </div>
+
+    <br />
+    <hr />
+
+    <!-- Filter list -->
+    <div>
+        <h4>Filter list items via JavaScript:</h4>
+
+        <div>Filter: <input type="text" id="txtFilterList"/></div>
+
+        <ul>
+            <li class="filter-list">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+
+            <li class="filter-list">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </li>
+
+            <li class="filter-list">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </li>
+
+            <li class="filter-list">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+        </ul>
+        
+    </div>
+
+</body>
+</html>
